@@ -48,3 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     # ...
 ```
+
+## Runner Information
+
+The logs of the first step in every job ("Set up job") has details about the image like the operating system, runner image and included software.
