@@ -9,6 +9,7 @@ Here are some common triggers for GitHub Actions workflows:
 Trigger a workflow when code is pushed to a specific branch.
 
 Example YAML:
+
 ```yaml
 on:
   push:
@@ -69,7 +70,7 @@ on:
 ```
 
 ## 6. Manual Triggers
-   
+
 Allow manual triggering of workflows through the GitHub Actions UI or API.
 
 Example YAML:
