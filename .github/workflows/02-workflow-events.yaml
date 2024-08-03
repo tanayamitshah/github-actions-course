@@ -1,12 +1,12 @@
 name: 02 - Workflow Events
 on:
   # This is valid syntax. The mapping doesn't need any fields.
-  push:
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "*/10 0 * * *" # Event 10 minutes
+  # push:
+  # pull_request:
+  #   branches:
+  #     - main
+  # schedule:
+  #   - cron: "*/10 0 * * *" # Event 10 minutes
   workflow_dispatch:
 jobs:
   echo:
