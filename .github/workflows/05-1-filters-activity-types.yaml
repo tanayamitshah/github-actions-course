@@ -2,10 +2,11 @@ name: 05 - 1 - Event Filters and Activity Types
 on:
   pull_request:
     branches:
-      - main
+      - tshah/05-filters-activity-types
     types:
       - opened
       - synchronize
+  workflow_dispatch:
 jobs:
   echo:
     name: Echo
