@@ -1,5 +1,7 @@
 # Using Actions in Workflows
 
+Actions are provided by GitHub and other third parties (from the GitHub Marketplace) but custom actions can also be used. Actions are used with `uses`. The use of actions instead of scripts avoid repetition and extensive commands. These actions can be configured via the `with` key-value pair.
+
 This GitHub Actions workflow demonstrates how to use actions within our GitHub Actions workflow to test a React application.
 
 ## Workflow Details
@@ -18,4 +20,4 @@ This GitHub Actions workflow demonstrates how to use actions within our GitHub A
 
 4. **Test**: It runs tests for the application using `npm run test`.
 
-We use the `defaults` option in our `job` definition to define the common `working-directory` for the `run` commands executed from within steps. This default only applies to the `run` commands. 
+We use the `defaults` option in our `job` definition to define the common `working-directory` for the `run` commands executed from within steps. This default only applies to the `run` commands.
