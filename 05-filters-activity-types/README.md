@@ -4,7 +4,7 @@ GitHub Actions workflows are highly customizable and can be triggered by various
 
 ## Introduction
 
-GitHub Actions allows you to automate your workflows based on specific events and activities. By defining event filters and activity types in your workflow configuration, you can precisely control when your actions run.
+GitHub Actions allows you to automate your workflows based on specific events and activities. By defining event filters and activity types in your workflow configuration, you can precisely control when your actions run. If there are multiple filters, then the filters are considered an `and` condition and not a `or` condition however within each filter, they are considered an `or` condition for example within `branches` filter, it is considered an `or` condition but if we have `branches` and `paths` filters, then it is considered an `and` condition.
 
 ## Event Filters
 
@@ -75,7 +75,7 @@ In this example, the workflow runs when a tag starting with "v" is pushed.
 
 ## Activity Types
 
-GitHub Actions provides several activity types per event. The best place to find a comprehensive list of all available activity types is the [GitHub Actions documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
+GitHub Actions provides several activity types per event (for example a pull request can be opened, closed, edited etc). The best place to find a comprehensive list of all available activity types is the [GitHub Actions documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
 
 ### Pull Request Activity Types
 
